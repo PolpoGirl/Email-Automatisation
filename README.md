@@ -4,29 +4,30 @@ Application Python pour l'envoi automatisé d'e-mails personnalisés à partir d
 
 
 ## Installation
-
+Cloner le repertoire
 ```bash
-git clone <repo>
-cd email_automation
+git clone Email-Automatisation
+cd Email-Automatisation
 
+Creation d'un environement virtuelle
 python -m venv venv
-source venv/bin/activate        # Linux/Mac
 venv\Scripts\activate           # Windows
 
+Installation des requiremts
 pip install -r requirements.txt
 
-cp .env.example .env
-# → Éditez .env avec vos identifiants SMTP
+Modification des variables d'environnement
+cp .env
 ```
 
 ---
 
-## 🗂️ Structure des dossiers
+## Structure des dossiers
 
 ```
 emails/
 ├── client_A/
-│   ├── config.json       ← obligatoire
+│   ├── config.json       ← Obligatoire a configurer pour chaque dossier
 │   ├── test.txt
 └── client_B/
     ├── config.json
@@ -34,7 +35,7 @@ emails/
 ```
 
 ### Format `config.json`
-
+Voici le format de configuration des fichier Json pour chaque dossier
 ```json
 {
   "destinataire": "client@example.com",
@@ -74,7 +75,7 @@ python main.py
 ---
 
 ## Logs
-
+Il existe un fichier dans lequel on peut retrouver tous les logs et les details de chaque envoie de mail
 - `logs/envois.log` — journal détaillé
 - `logs/envois.csv` — tableau CSV (horodatage, dossier, destinataire, statut, erreur)
 
