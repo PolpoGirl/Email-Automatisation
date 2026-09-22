@@ -3,7 +3,7 @@
 Application Python pour l'envoi automatisé d'e-mails personnalisés à partir d'une arborescence de dossiers.
 
 
-## Installation
+## Installation du repertoire
 Cloner le repertoire
 ```bash
 git clone Email-Automatisation
@@ -34,7 +34,7 @@ emails/
     └── rapport.xlsx
 ```
 
-### Format `config.json`
+### Configuration des format `config.json`
 Voici le format de configuration des fichier Json pour chaque dossier
 ```json
 {
@@ -52,19 +52,19 @@ Voici le format de configuration des fichier Json pour chaque dossier
 
 ---
 
-## Utilisation
+## Commande CLI de Email-Automatisation
 
-### Mode test (aucun mail envoyé)
+### Commande pour faire un test (aucun mail ne sera envoyé)
 ```bash
 python main.py --dry-run
 ```
 
-### Envoi réel
+### Commande pour envoyer tous les mails de façon instantanée
 ```bash
 python main.py
 ```
 
-### Options disponibles
+### Autres options de commande disponibles
 ```
 --dir <chemin>        Répertoire racine des dossiers (override .env)
 --template <chemin>   Chemin vers le template (override .env)
@@ -74,7 +74,7 @@ python main.py
 
 ---
 
-## Logs
+## Fichier Logs
 Il existe un fichier dans lequel on peut retrouver tous les logs et les details de chaque envoie de mail
 - `logs/envois.log` — journal détaillé
 - `logs/envois.csv` — tableau CSV (horodatage, dossier, destinataire, statut, erreur)
