@@ -1,0 +1,12 @@
+{
+  "destinataire": "Company@group-company.com",
+  "cc": [],
+  "cci": [],
+  "sujet": "Demande de stage Pro – 3 mois",
+  "variables": {
+    "nom": "Jeff Bezoz",
+    "date": "12 Novembre 2021",
+    "currency": "100$",
+    "transaction_id": "123456789"
+  }
+}

@@ -1,0 +1,19 @@
+Hello John Doe,
+
+Thank you for your recent intership.
+
+Your payment of {{name}} {{currency}} has been successfully processed.
+Transaction ID : {{transaction_id}}
+Date           : {{date}}
+Status         : Confirmed
+
+You can view your transaction history in your dashboard at any time.
+
+Best regards,
+Jeff Bezoz
+Support Team
+support@bozoz.com | (+1) 124 256 477 475
+
+--
+Jeff Bezoz
+CEO of PornHub
